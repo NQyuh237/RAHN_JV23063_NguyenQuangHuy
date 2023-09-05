@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Đặt màu nền cho toàn bộ component */
+.todo-list {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #ff3333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Định dạng tiêu đề và phụ đề */
+.todo-list h1 {
+  font-size: 36px;
+  margin-bottom: 10px; 
+}
+
+.todo-list h2 {
+  font-size: 18px; 
+  margin: 0;
+}
+
+/* Định dạng danh sách các công việc */
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Định dạng ô kiểm tra */
+.todo-list input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+/* Định dạng nội dung của công việc */
+.todo-list span {
+  font-size: 24px;
+  flex-grow: 1;
+}
+
+/* Thêm gạch chân cho nội dung của công việc đã hoàn thành */
+.todo-list span.done {
+  text-decoration: line-through;
+}
+
+/* Định dạng công tắc */
+.todo-list .toggle {
+  display: flex;
+  align-items: center;
+}
+
+/* Định dạng nhãn của công tắc */
+.todo-list label {
+  margin-right: 10px;
+}
+
+/* Định dạng form nhập liệu */
+.todo-list form {
+  display: flex;
+  margin-top: 20px; 
+}
+
+/* Định dạng ô nhập liệu */
+.todo-list input[type='text'] {
+  flex-grow: 1;
+  padding: 5px; 
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Định dạng nút thêm công việc */
+.todo-list button {
+  background-color: #fff;
+  color: #ff3333;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Định dạng nút thêm công việc khi di chuột qua */
+.todo-list button:hover {
+  background-color: #ba2525;
+  color: #fff;
+}
